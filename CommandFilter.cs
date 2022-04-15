@@ -67,6 +67,7 @@ namespace CommentJokes
             return extension.ToLower();
         }
 
+        // language list from: https://docs.microsoft.com/en-us/visualstudio/ide/adding-visual-studio-editor-support-for-other-languages?view=vs-2022
         // both single & block
         HashSet<string> both = new HashSet<string>(
             new string[]{

@@ -45,7 +45,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="CommandFilter.cs" />
     <Compile Include="Joker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
