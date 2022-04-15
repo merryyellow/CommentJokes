@@ -1,5 +1,5 @@
 # CommentJokes
-Visual Studio extension for displaying jokes just before you write a comment ^^_^^
+Visual Studio extension for displaying jokes just before you write a comment ^_^
 
 [Get it from Marketplace](https://marketplace.visualstudio.com/items?itemName=MerryYellow.commentjokes)
 
