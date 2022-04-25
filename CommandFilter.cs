@@ -75,7 +75,7 @@ namespace CommentJokes
         HashSet<string> both = new HashSet<string>(
             new string[]{
                 ".cs", ".csx", // c#
-                ".c", ".cc",  ".cpp", ".cxx", ".c++", ".h", ".hh", "hpp", ".hxx", ".h++", // c/c++
+                ".c", ".cc",  ".cpp", ".cxx", ".c++", ".h", ".hh", ".hpp", ".hxx", ".h++", // c/c++
                 ".m", ".mm", // objective c
                 ".ts", ".tsx", // typescript
                 ".js", ".cjs", ".mjs", // javascript
