@@ -45,9 +45,12 @@ namespace CommentJokes
 
             //var adornment = textView.Properties.GetProperty<TypingSpeedMeter>(typeof(TypingSpeedMeter));
 
-            textView.Properties.GetOrCreateSingletonProperty(
-                () => new TypeCharFilter(textViewAdapter, textView,
-                isSingle, isBlock, isXml));
+            if (isSingle || isBlock || isXml)
+            {
+                textView.Properties.GetOrCreateSingletonProperty(
+                    () => new TypeCharFilter(textViewAdapter, textView,
+                    isSingle, isBlock, isXml));
+            }
         }
 
         public static string GetExtension(IWpfTextView textView)
@@ -71,31 +74,32 @@ namespace CommentJokes
         // both single & block
         HashSet<string> both = new HashSet<string>(
             new string[]{
-                ".cs", ".csx",
-                ".c", ".cc",  ".cpp", ".cxx", ".c++", ".h", ".hh", "hpp", ".hxx", ".h++", ".m", ".mm",
-                ".ts", ".tsx",
-                ".js", ".cjs", ".mjs",
-                ".go",
-                ".java", ".class", ".jmod", ".jar",
-                ".rs", ".rlib",
-                ".groovy", ".gvy", ".gy", ".gsh",
-                ".less",
-                ".swift",
+                ".cs", ".csx", // c#
+                ".c", ".cc",  ".cpp", ".cxx", ".c++", ".h", ".hh", "hpp", ".hxx", ".h++", // c/c++
+                ".m", ".mm", // objective c
+                ".ts", ".tsx", // typescript
+                ".js", ".cjs", ".mjs", // javascript
+                ".go", // go
+                ".java", ".class", ".jmod", ".jar", // java
+                ".rs", ".rlib", // rust
+                ".groovy", ".gvy", ".gy", ".gsh", // groovy
+                ".less", // less
+                ".swift", // swift
             });
         HashSet<string> single = new HashSet<string>(
             new string[]
             {
-                ".fs", ".fsi", ".fsx", ".fsscript",
-                ".jade",
+                ".fs", ".fsi", ".fsx", ".fsscript", // f#
+                ".jade", // jade
             });
         HashSet<string> block = new HashSet<string>(
             new string[]
             {
-                ".css",
+                ".css", // css
             });
         HashSet<string> xml = new HashSet<string>(
             new string[]{
-                ".cs",
+                ".cs", "csx", // c#
             });
     }
 
