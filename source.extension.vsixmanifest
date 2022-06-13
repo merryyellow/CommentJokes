@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" ?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="CommentJokes.0248f47c-5300-43f1-873a-4a95cdd890d0" Version="1.0" Language="en-US" Publisher="Merry Yellow" />
+        <Identity Id="CommentJokes.0248f47c-5300-43f1-873a-4a95cdd890d0" Version="1.0.1" Language="en-US" Publisher="Merry Yellow" />
         <DisplayName>Comment Jokes</DisplayName>
         <Description xml:space="preserve">Displays a joke just before you write your comment ^_^</Description>
         <Icon>comment-jokes-logo-3.png</Icon>
